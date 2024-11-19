@@ -1,0 +1,9 @@
+# how to use pretrained model
+from transformers import AutoModel
+
+# There are 5 pretrained, we choose B, the four output channels are:  512 256 128 64 --> suitable for our tasks
+model = AutoModel.from_pretrained("nvidia/MambaVision-T-1K", trust_remote_code=True)
+model = AutoModel.from_pretrained("nvidia/MambaVision-T2-1K", trust_remote_code=True)
+model = AutoModel.from_pretrained("nvidia/MambaVision-B-1K", trust_remote_code=True)
+model = AutoModel.from_pretrained("nvidia/MambaVision-L-1K", trust_remote_code=True)
+model = AutoModel.from_pretrained("nvidia/MambaVision-L2-1K", trust_remote_code=True)
