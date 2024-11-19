@@ -58,17 +58,6 @@ class Encoder(nn.Module):
         # self.latent (B, L, H, W)
     
     def index(self, uv, cam_z=None, image_size=(), roi_feat=None, z_bounds=None, offset_xy=None):
-        """
-        Get pixel-aligned image features at 2D image coordinates
-        :param uv (B, N_uv, 2) image points (x,y)
-        :param cam_z ignored (for compatibility)
-        :param image_size image size, either (width, height) or single int.
-        if not specified, assumes coords are in [-1, 1]
-        :param z_bounds ignored (for compatibility)
-        :param offset_xy, if use deformable attention, x y offset, [-1, 1]
-        :param sample_size, if use deformable attention, get sample_size pixel img feature mean
-        :return (B, L, N) L is latent size
-        """
         with profiler.record_function("encoder_index"):
             if uv.shape[0] == 1 and self.latent.shape[0] > 1:
                 uv = uv.expand(self.latent.shape[0], -1, -1)
