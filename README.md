@@ -1,24 +1,49 @@
-# M3D: High-Fidelity Single-View 3D Reconstruction Framework
+# Single-view 3D Scene Reconstruction with High-fidelity Shape and Texture (M3D Framework)
 
-M3D is a framework for high-precision 3D object reconstruction from a single RGB image, suitable for applications in virtual reality, autonomous driving, and robotics.
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-red)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2411.12635)
+[![arXiv](https://img.shields.io/badge/arXiv-2411.12635-green)](https://arxiv.org/abs/2411.12635)
 
-> **Note:** This project is currently under development. Some features are incomplete, and the codebase is being actively refined and optimized.
+---
+
+M3D is a high-fidelity framework for reconstructing 3D scenes and objects from a single RGB image. This framework combines state-of-the-art dual-stream feature extraction and depth-driven methodologies to deliver superior performance in challenging scenarios, such as virtual reality, autonomous driving, and robotics.
+
+![M3D Reconstruction Process](imgs/process.png)
+
+---
 
 ## Project Status
 
-This project is currently in **active development**, and some modules are still being optimized and refined.
+This project is currently in **active development**, with continuous refinements and improvements.
 
-- **What’s available**:
-  - Basic code framework.
-  - Initial feature implementations.
+### Available Features:
+- A basic code framework.
+- Initial implementations of the key reconstruction modules.
 
-- **Planned updates**:
-  - Comprehensive testing and evaluation tools.
-  - Performance and functionality improvements.
+### Planned Updates:
+- Comprehensive testing and evaluation tools.
+- Enhanced performance optimizations.
+- Full support for large-scale scene editing and reconstruction.
 
-We welcome contributions and feedback to help us improve this project!
+We welcome contributions and suggestions to help improve the project further!
 
-## Contributions
+---
 
-This project is a **work in progress**, and some features are still under development. If you’re interested in contributing, feel free to fork the repository, make improvements, and submit pull requests!
+## Paper
 
+This work is based on our CVPR 2025 paper. For more details, please check the following:
+
+- [Paper PDF](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2411.12635)
+- [arXiv Link](https://arxiv.org/abs/2411.12635)
+
+If you use this project or parts of the framework in your research, please consider citing:
+
+```bibtex
+@misc{zhang2024m3ddualstreamselectivestate,
+      title={M3D: Dual-Stream Selective State Spaces and Depth-Driven Framework for High-Fidelity Single-View 3D Reconstruction}, 
+      author={Luoxi Zhang and Pragyan Shrestha and Yu Zhou and Chun Xie and Itaru Kitahara},
+      year={2024},
+      eprint={2411.12635},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.12635}, 
+}
