@@ -28,13 +28,6 @@ We welcome contributions and suggestions to help improve the project further!
 
 ---
 
-## Paper
-
-This work is based on our CVPR 2025 paper. For more details, please check the following:
-
-- [Paper PDF](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2411.12635)
-- [arXiv Link](https://arxiv.org/abs/2411.12635)
-
 If you use this project or parts of the framework in your research, please consider citing:
 
 ```bibtex
